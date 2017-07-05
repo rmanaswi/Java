@@ -1,0 +1,30 @@
+package org.manswi.messanger.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.manswi.messanger.model.Message;
+
+public class MessageService {
+	
+	private Map<Long,Message> messages=DatabaseClass.getMessages();
+	
+	
+	
+	public List<Message> getAllMessages(){
+		Message m1=new Message(1L,"Hello World!!","Manaswi");
+		Message m2=new Message(1L,"Hello!","Mani");
+		Message m3=new Message(1L,"World!!","Manwi");
+		Message m4=new Message(1L,"H World!!","Maswi");
+		List<Message> list=new ArrayList<>();
+		list.add(m1);
+		list.add(m2);
+		list.add(m3);
+		list.add(m4);
+		return list;
+		
+		
+		
+	}
+
+}

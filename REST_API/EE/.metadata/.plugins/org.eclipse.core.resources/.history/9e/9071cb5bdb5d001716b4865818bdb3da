@@ -1,0 +1,5 @@
+package org.manswi.messanger.model;
+
+public class Profile {
+
+}

@@ -1,0 +1,8 @@
+package org.manswi.messanger.resource.copy;
+
+public class MessageResource {
+	public String getMessage(){
+		return "Hello World!!!";
+	}
+
+}

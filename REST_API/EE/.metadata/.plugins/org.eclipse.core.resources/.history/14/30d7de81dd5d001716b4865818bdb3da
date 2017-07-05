@@ -1,0 +1,27 @@
+package org.manswi.messanger.service;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import org.manswi.messanger.database.Database;
+import org.manswi.messanger.model.Message;
+
+public class MessageService {
+	
+	private Map<Long,Message> messages=Database.getMessages();
+	
+	
+	
+	public List<Message> getAllMessages(){
+		return new ArrayList<Message>(messages.values());
+		
+		}
+	
+	public Message addMessage(Message message){
+		message.setId(message.size()+1);
+		messages.put(message.getId(), message);
+		
+	}
+
+}

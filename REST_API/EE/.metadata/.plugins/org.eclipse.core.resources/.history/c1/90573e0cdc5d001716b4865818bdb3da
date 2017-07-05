@@ -1,0 +1,12 @@
+package org.manswi.messanger.database;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.manswi.messanger.model.Message;
+
+public class Database {
+	private static Map<Long,Message> messages=new HashMap<>();
+	private static Map<Long,Message> profiles=new HashMap<>();
+
+}

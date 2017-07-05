@@ -1,0 +1,11 @@
+package org.manswi.messanger.model;
+
+public class Profile {
+	
+	private long id;
+	private String profileName;
+	private String firstName;
+	private String lastName;
+	private Date created;
+
+}

@@ -1,0 +1,5 @@
+package org.manswi.messanger.database;
+
+public class Database {
+
+}

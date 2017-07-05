@@ -1,0 +1,8 @@
+package org.manswi.messanger.service;
+
+public class MessageService {
+	public List<Message> getAllMessages(){
+		
+	}
+
+}
